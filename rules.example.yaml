@@ -1,0 +1,15 @@
+- id: custom_tracking_rule
+  condition: analytics == true
+  requirements:
+    en: User must explicitly accept tracking before non-essential analytics starts.
+    ru: Пользователь должен явно принять tracking до запуска необязательной аналитики.
+    us-ca: User opt-out and applicable privacy-control choices must be honored before sale/share tracking.
+  severity: 70
+
+- id: custom_form_policy_rule
+  condition: forms_collect_personal_data == true
+  requirements:
+    en: Every personal-data form must link to the current privacy policy before submit.
+    ru: Каждая форма сбора персональных данных должна ссылаться на актуальную политику до отправки.
+    us-ca: Every collection point must provide notice at or before collection.
+  severity: 80
